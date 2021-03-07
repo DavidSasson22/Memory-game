@@ -72,6 +72,22 @@ const main = async () => {
 
   stopWatch();
 
+  play= document.querySelector(".play");
+  pause= document.querySelector(".pause");
+
+  var x = document.querySelector("#myAudio");
+  function playAudio() {
+    x.play();
+  }
+
+  function pauseAudio() {
+    x.pause();
+  }
+
+  play.addEventListener("click", playAudio);
+  pause.addEventListener("click", pauseAudio);
+
+
   const dataZone = document.querySelector(`.dataZone`);
   const playzone = document.querySelector(`.playzone`);
   const wrongDisplay = document.querySelector(`.wrong`);
@@ -116,7 +132,7 @@ const main = async () => {
 
       if (wright === 6) {
         dataZone.innerHTML = "<h2>Well Played!</h2>";
-        playzone.innerHTML =``;
+        playzone.innerHTML = ``;
         playzone.style.background = `url(../img/youWan.gif)`;
 
       }
