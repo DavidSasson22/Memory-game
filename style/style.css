@@ -68,21 +68,33 @@ body {
 
 .c0 {
   background: url("../img/1.jpg");
+  background-size: contain;
+
 }
 .c1 {
   background: url("../img/2.jpg");
+  background-size: contain;
+
 }
 .c2 {
   background: url("../img/3.jpg");
+  background-size: contain;
+
 }
 .c3 {
   background: url("../img/4.jpg");
+    background-size: contain;
+
 }
 .c4 {
   background: url("../img/5.jpg");
+  background-size: contain;
+
 }
 .c5 {
   background: url("../img/6.jpg");
+  background-size: contain;
+
 }
 
 
