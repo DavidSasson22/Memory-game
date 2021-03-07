@@ -30,6 +30,9 @@ body {
   margin-left: 16px;
   margin-right: 16px;
   border-radius: 24px;
+  background-repeat: no-repeat;
+  background-attachment: contain;
+  background-position: center;
 }
 
 .dataZone {

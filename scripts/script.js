@@ -117,7 +117,8 @@ const main = async () => {
       if (wright === 6) {
         dataZone.innerHTML = "<h2>You Wan!</h2>";
         playzone.innerHTML =``;
-        playzone.style.background = `url(../img/youWan.gif)/no-repeat center center`;
+        playzone.style.background = `url(../img/youWan.gif)`;
+
       }
     });
   })
