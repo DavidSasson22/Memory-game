@@ -13,41 +13,56 @@ function shuffle(array) {
 
 const stopWatch = () => {
   const timer = document.querySelector(`.timer`);
+  const reset = document.querySelector(".reset");
+
+  reset.addEventListener("click", () => {
+    condition = true;
+    milis = 1;
+    sec = 0;
+    min = 0;
+    hou = 0;
+    timer.textContent = `${min}:${sec}`;
+    condition = false;
+  })
+
 
   let milis = 1;
   let sec = 0;
   let min = 0;
   let hou = 0;
 
-  interval = setInterval(() => {
-    if (sec < 10 && min < 10) {
-      timer.textContent = `0${min}:0${sec}`
-    }
-    else if (sec < 10 && min >= 10) {
-      timer.textContent = `${min}:0${sec}`
-    }
-    else if (sec >= 10 && min < 10) {
-      timer.textContent = `0${min}:${sec}`
-    }
-    else {
-      timer.textContent = `${min}:${sec}`
-    }
-    milis += 1;
-    if (milis === 100) {
-      milis = 0;
-      sec += 1;
-    }
-    if (sec == 60) {
-      sec = 0;
-      min += 1;
-    }
-    if (min == 60) {
-      min = 0;
-      hou += 1;
-    }
-  }, 10)
+  let condition = false;
 
-
+  if (!condition) {
+    interval = setInterval(() => {
+      if (sec < 10 && min < 10) {
+        timer.textContent = `0${min}:0${sec}`
+      }
+      else if (sec < 10 && min >= 10) {
+        timer.textContent = `${min}:0${sec}`
+      }
+      else if (sec >= 10 && min < 10) {
+        timer.textContent = `0${min}:${sec}`
+      }
+      else {
+        timer.textContent = `${min}:${sec}`
+      }
+      milis += 1;
+      if (milis === 100) {
+        milis = 0;
+        sec += 1;
+      }
+      if (sec == 60) {
+        sec = 0;
+        min += 1;
+      }
+      if (min == 60) {
+        min = 0;
+        hou += 1;
+      }
+    }, 10)
+  }
+  condition = true;
 };
 
 
@@ -63,17 +78,25 @@ const makeBasicCards = (arr, zone) => {
   }
 }
 
-function machingTest(arr) {
-  return arr[0] === arr[1] ? true : false;
-}
-
 
 const main = async () => {
 
   stopWatch();
 
-  play= document.querySelector(".play");
-  pause= document.querySelector(".pause");
+  const play = document.querySelector(".play");
+  const pause = document.querySelector(".pause");
+  const reset = document.querySelector(".reset");
+
+  reset.addEventListener("click", () => {
+    playzone.innerHTML = ``;
+    selected = [];
+    wrong = 0;
+    wright = 0;
+    wrongDisplay.innerHTML = `${wrong}`;
+    wrightDisplay.innerHTML = `${wright}`;
+    main();
+  });
+
 
   var x = document.querySelector("#myAudio");
   function playAudio() {
