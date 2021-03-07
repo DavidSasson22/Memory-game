@@ -117,16 +117,10 @@ const main = async () => {
       if (wright === 6) {
         dataZone.innerHTML = "<h2>You Wan!</h2>";
         playzone.innerHTML =``;
-        playzone.style.background = `url(../img/youWan.gif)`;
-
+        playzone.style.background = `url(../img/youWan.gif)/no-repeat center center`;
       }
     });
   })
 }
 
 main();
-
-
-// setTimeout(() => {
-//   card.firstChild.style.display = "none"
-// }, 1000);
