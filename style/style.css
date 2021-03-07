@@ -97,6 +97,10 @@ body {
 
 }
 
+button {
+  padding: 8px;
+}
+
 
 header{
   /* padding: 16px; */
