@@ -115,7 +115,7 @@ const main = async () => {
       }
 
       if (wright === 6) {
-        dataZone.innerHTML = "<h2>You Wan!</h2>";
+        dataZone.innerHTML = "<h2>Well Played!</h2>";
         playzone.innerHTML =``;
         playzone.style.background = `url(../img/youWan.gif)`;
 
