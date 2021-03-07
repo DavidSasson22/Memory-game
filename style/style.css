@@ -123,3 +123,40 @@ header{
 .miliseconds {
   display: none;
 }
+
+
+@media (max-width: 1000px) {
+  .playzone {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  margin: 0 4px 0 4px;
+  }
+  .wraper {
+    flex-wrap: wrap;
+  }
+  .dataZone {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    font-size: 8px;
+    line-height: 14px;
+    margin: 4px;
+  }
+  button {
+    padding: 0;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+  header {
+    margin: 4px 4px 0 4px;
+    height: 40px;
+  }
+
+  br {
+    display: none;
+    }
+}
