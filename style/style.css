@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #06d6a0;
+}
+
+.wraper {
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+
+.playzone {
+  width: 80%;
+  height: 100%;
+  padding: 16px;
+  background-color: rgb(157, 252, 227);
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: #073b4c 2px solid;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 24px;
+}
+
+.dataZone {
+  width: 20%;
+  height: 100%;
+  background-color: #ffd166;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #40341A;
+  border-radius: 24px;
+  margin-left: 16px;
+}
+
+.card {
+  position: relative;
+  background-color:#118ab2;
+  z-index: 100;
+}
+
+.cCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.c0 {
+  background: url("../img/1.jpg");
+}
+.c1 {
+  background: url("../img/2.jpg");
+}
+.c2 {
+  background: url("../img/3.jpg");
+}
+.c3 {
+  background: url("../img/4.jpg");
+}
+.c4 {
+  background: url("../img/5.jpg");
+}
+.c5 {
+  background: url("../img/6.jpg");
+}
+
+
+header{
+  /* padding: 16px; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef476f;
+  height: 10%;
+  color: white;
+  border-radius: 24px;
+  margin: 0 16px 0 16px;
+}
+
+.miliseconds {
+  display: none;
+}
