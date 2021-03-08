@@ -127,7 +127,7 @@ const main = async () => {
 
   const listener = document.querySelectorAll(`.card`);
   listener.forEach(card => {
-    card.addEventListener("click", () => {
+    card.addEventListener("click", async () => {
       card.firstChild.style.opacity = "1";
       card.firstChild.style.transform = "rotateY(180deg)";
       if (selected.length < 2) {
