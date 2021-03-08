@@ -141,7 +141,7 @@ const main = async () => {
             selected[0].style.opacity = "0";
             selected[1].style.opacity = "0";
             selected[0].style.transform = "rotateY(-90deg)";
-            selected[1].style.transform = "rotateY(-90deg)";
+            selected[1].style.transform = "rotateY(-deg)";
           }, 500);
         }
         else {

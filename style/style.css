@@ -177,8 +177,12 @@ header{
     display: none;
     }
   
-    .buttons {
-      flex-direction: row;
-      margin: 0;
-    }
+  .buttons {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .c0, .c1, .c2, .c3, .c4, .c5 {
+    background-size: contain;
+  }
 }
