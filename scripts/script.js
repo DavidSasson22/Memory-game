@@ -152,7 +152,6 @@ const main = async () => {
       else {
         selected = [card.firstChild];
       }
-
       if (wright === 6) {
         dataZone.innerHTML = "<h2>Well Played!</h2>";
         playzone.innerHTML = ``;

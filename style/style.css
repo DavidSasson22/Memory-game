@@ -62,43 +62,43 @@ body {
   width: 100%;
   height: 100%;
   z-index: 500;
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
   opacity: 0;
 }
 
 .c0 {
   background: url("../img/1.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .c1 {
   background: url("../img/2.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .c2 {
   background: url("../img/3.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .c3 {
   background: url("../img/4.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .c4 {
   background: url("../img/5.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .c5 {
   background: url("../img/6.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
