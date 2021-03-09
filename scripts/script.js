@@ -94,6 +94,8 @@ const main = async () => {
     wright = 0;
     wrongDisplay.innerHTML = `${wrong}`;
     wrightDisplay.innerHTML = `${wright}`;
+    playzone.style.background = "#9dfce3";
+    dataZone.removeChild(dataZone.lastElementChild);
     main();
   });
 
@@ -155,9 +157,12 @@ const main = async () => {
         selected = [card.firstChild];
       }
       if (wright === 6) {
-        dataZone.innerHTML += "<h2>Well Played!</h2>";
+        // dataZone.innerHTML += "<h2>Well Played!</h2>";
+        won = document.createElement("h2");
+        won.textContent = `Well Played!`;
         playzone.innerHTML = ``;
         playzone.style.background = `url(../img/youWan.gif)`;
+        dataZone.appendChild(won);
       }
     });
   })
